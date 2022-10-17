@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>User's API</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+    }
+    table * {
+      font-size: 1.6rem;
+      background: lightgray;
+      padding: 8px;
+      border: 0;
+    }
+  </style>
+  <body>
+    <h1>Welcome to Express User's JSON-API</h1>
+    <h3>EndPoints</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 150px">Method</th>
+          <th>EndPoint</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GET</td>
+          <td>
+            <a href="/user/random">/user/random</a>
+          </td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>
+            <a href="/user/all">/user/all</a>
+          </td>
+        </tr>
+        <tr>
+          <td>POST</td>
+          <td>
+            <a href="/user/save">/user/save</a>
+          </td>
+        </tr>
+        <tr>
+          <td>PATCH</td>
+          <td>
+            <a href="/user/update">/user/update</a>
+          </td>
+        </tr>
+        <tr>
+          <td>PATCH</td>
+          <td>
+            <a href="/user/bulk-update">/user/bulk-update</a>
+          </td>
+        </tr>
+        <tr>
+          <td>DELETE</td>
+          <td>
+            <a href="/user/delete">/user/delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

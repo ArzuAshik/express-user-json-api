@@ -1,11 +1,13 @@
 const express = require("express");
 const cors = require("cors");
+require("dotenv").config();
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 const usersRoutes = require("./routes/v1/users.route.js");
 
 app.use(cors());
 app.use(express.json());
+app.set("view engine", "ejs");
 
 // app.use(viewCount);
 
@@ -16,7 +18,7 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 app.get("/", (req, res) => {
-  res.send("hlsdf");
+  res.render("home.ejs");
 })
 app.use("/api/v1/users", usersRoutes);
 
